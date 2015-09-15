@@ -15,5 +15,6 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
-	url(r'^', include(app_urls)), # Added URL
+	url(r'^rango/', include('rango.urls')), # Added URL
+	url(r'^rango/about/', include('rango.urls')), # About Page
 )
